@@ -25,7 +25,7 @@ const WeatherCard = ({ weather, temperature, isCelsius, changeUnitTemperature })
         </ul>
       </section>
       <p>{isCelsius ? `${temperature.celsius} °C ` : `${temperature.fahrenheit} °F`} K</p>
-      <button onClick={changeUnitTemperature}>Degrees °F/°C</button>
+      <button className='boton' onClick={changeUnitTemperature}> <span>Degrees °F/°C</span> </button>
     </article>
 
   )

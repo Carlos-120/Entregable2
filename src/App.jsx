@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import "./App.css"
+import Loading from './compontes/img/Loading'
 import WeatherCard from './compontes/WeatherCard'
 
 
@@ -47,7 +48,7 @@ function App() {
   return (
     <div className="App">
       {
-        weather ? (<WeatherCard weather={weather} temperature={temperature} changeUnitTemperature={changeUnitTemperature} isCelsius={isCelsius} />) : <p>Loading ... </p>
+        weather ? (<WeatherCard weather={weather} temperature={temperature} changeUnitTemperature={changeUnitTemperature} isCelsius={isCelsius} />) : <Loading />
       }
     </div>
   )
