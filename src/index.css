@@ -19,7 +19,7 @@ body {
 
 .time {
 
-    filter: drop-shadow(5px 5px 20px rgb(0, 98, 245));
+    filter: drop-shadow(5px 5px 20px rgb(83, 82, 82));
     border-radius: 12px;
     font-size: 18px;
     font-size: 1.5rem;
@@ -29,19 +29,37 @@ body {
     transition: 0.2s;
     padding: 15px 30px;
     margin: 60px;
-    background-image: url(/src/compontes/img/fondo-nubes.jpg);
+    background: rgba(0, 98, 245, 0.4);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 400px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.conten1 {
+    background: #65bbbb4b;
+    border-radius: 20px;
+}
+
+.Mayusculas {
+    text-transform: uppercase;
 }
 
 
 button {
     border: none;
     display: inline-flex;
-    background-color: rgba(2, 133, 194, 0.856);
+    background-color: rgba(137, 204, 235, 0.856);
     width: 150px;
     height: 35px;
     align-items: center;
     justify-content: center;
-    color: #b5b5b5;
+    color: #2c2525;
     font-size: 16px;
     cursor: pointer;
     text-transform: uppercase;
@@ -61,8 +79,8 @@ button {
 }
 
 button:hover {
-    background: #3b787a;
-    filter: drop-shadow(5px 5px 20px rgb(50, 81, 219));
+    background: #a3a8a8a8;
+    filter: drop-shadow(5px 5px 20px rgb(68, 64, 64));
 }
 
 
