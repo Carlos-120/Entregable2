@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const WeatherCard = ({ weather, temperature, isCelsius, changeUnitTemperature }) => {
+const WeatherCard = ({ weather, temperature, isCelsius, changeUnitTemperature, newCallAPISearch }) => {
 
+  const [place, setPlace] = useState("")
+
+  const handleChangePlace = (e) => {
+    setPlace(e.target.value)
+
+  }
 
 
   return (
@@ -24,8 +30,22 @@ const WeatherCard = ({ weather, temperature, isCelsius, changeUnitTemperature })
         </div>
 
       </section>
-      <p>{isCelsius ? `${temperature.celsius} °C ` : `${temperature.fahrenheit} °F`} K</p>
-      <button className='boton' onClick={changeUnitTemperature}> <span>Degrees °F/°C</span> </button>
+      <section className='grid'>
+        <div>
+          <p>{isCelsius ? `${temperature.celsius} °C ` : `${temperature.fahrenheit} °F`} K</p>
+          <button className='boton' onClick={changeUnitTemperature}> <span>Degrees °F/°C</span> </button>
+        </div>
+        <div>
+          <input
+            type="text"
+            value={place}
+            onChange={handleChangePlace} />
+          <br />
+          <button onClick={() => newCallAPISearch(place)} >Search</button>
+        </div>
+      </section>
+
+
     </article>
 
   )
