@@ -41,7 +41,7 @@ const WeatherCard = ({ weather, temperature, isCelsius, changeUnitTemperature, n
             value={place}
             onChange={handleChangePlace} />
           <br />
-          <button onClick={() => newCallAPISearch(place)} >Search</button>
+          <button className='icon_serch' onClick={() => newCallAPISearch(place)} ><i class='bx bx-search' ></i></button>
         </div>
       </section>
 

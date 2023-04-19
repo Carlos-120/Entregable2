@@ -12,15 +12,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/src/compontes/img/clima.png);
+    background-color: rgba(108, 181, 250, 0.921);
     text-align: center;
 }
 
 
 .time {
-    border: rgb(172, 172, 190) solid 1px;
-    filter: drop-shadow(5px 5px 20px rgb(83, 82, 82));
-    border-radius: 12px;
+    filter: drop-shadow(5px 15px 20px rgb(12, 12, 12));
+    border-radius: 16px;
     font-size: 18px;
     font-size: 1.5rem;
     position: relative;
@@ -29,7 +28,7 @@ body {
     transition: 0.2s;
     padding: 15px 30px;
     margin: 60px;
-    background: rgba(0, 98, 245, 0.4);
+    background: rgba(5, 175, 201, 0.977);
 }
 
 .grid {
@@ -42,9 +41,12 @@ body {
 }
 
 .conten1 {
-
-    background: #65bbbb4b;
+    margin-left: 90px;
+    width: 300px;
+    font-size: 20px;
+    background: #3296bac1;
     border-radius: 20px;
+    filter: drop-shadow(5px 15px 20px rgba(47, 49, 84, 0.709));
 }
 
 .Mayusculas {
@@ -52,7 +54,7 @@ body {
 }
 
 
-button {
+.boton {
     border: none;
     display: inline-flex;
     background-color: rgba(137, 204, 235, 0.856);
@@ -60,12 +62,13 @@ button {
     height: 35px;
     align-items: center;
     justify-content: center;
-    color: #2c2525;
+    color: #1f1e1e;
     font-size: 16px;
     cursor: pointer;
     text-transform: uppercase;
     transition: .3s ease all;
     border-radius: 8px;
+    transition: transform .3s ease-in-out;
 }
 
 .boton::after {
@@ -80,19 +83,32 @@ button {
 }
 
 button:hover {
-    background: #a3a8a8a8;
-    filter: drop-shadow(5px 5px 20px rgb(68, 64, 64));
+    background: #1677b3db;
+   transform: translateY(-4px) ;
 }
 
-
+.icon_serch{
+    position: absolute;
+    top: 422px;
+    left: 592px;
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+    }
+.icon_serch:hover{
+    background: #d5e2eadb;
+    transform: translateY(-4px);
+    border: solid rgb(0, 0, 0) 1px;
+        }
 .conten {
+  
     float: inline-start;
-    animation: movimiento 2.5s linear infinite;
+    animation: movimiento 3s linear infinite;
 }
 
 .conten>img {
     margin: 30px auto;
-    width: 150px;
+    width: 170px;
     height: auto;
     filter: drop-shadow(5px 5px 20px rgb(255, 255, 255));
     padding: 0;
@@ -116,6 +132,7 @@ button:hover {
 
 ul>li {
     list-style: none;
+    margin-left:-25px ;
 }
 
 @media screen and (min-width: 768px) {
@@ -159,13 +176,13 @@ ul>li {
 .cicle:nth-child(2) {
     border-bottom-width: 8px;
     border-color: rgb(95, 130, 228);
-    animation: rotate2 2s linear infinite;
+    animation: rotate2 1s linear infinite;
 }
 
 .cicle:nth-child(3) {
     border-bottom-width: 8px;
     border-color: rgb(63, 218, 49);
-    animation: rotate3 2s linear infinite;
+    animation: rotate3 3s linear infinite;
 }
 
 @keyframes rotate1 {
@@ -203,16 +220,23 @@ ul>li {
 }
 
 input {
-    background: rgb(160 185 255);
+    background: rgb(208, 214, 230);
     border: none;
     border-radius: 5px;
     padding: 5px;
     margin-top: 45px;
     margin-bottom: 10px;
-    height: 30px;
+    height: 40px;
+    width: 300px;
     font-size: 1rem;
 }
 
 input:hover {
-    border: #0e0c0c solid 2px;
+    border: none;
+    background-color: #ffffff solid 2px;
+}
+.icon_serch{
+position: absolute;
+top: 422px;
+right: 2px;
 }
